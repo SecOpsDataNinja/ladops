@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 · LadOps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-title">LadOps</a>
+      <nav>
+        <a href="index.html">首页</a>
+        <a href="archives.html">归档</a>
+        <a href="about.html" class="active">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1 class="page-title">关于</h1>
+    </div>
+    <div class="divider"></div>
+    <article class="about-content prose">
+      <p>专注于基础设施稳定性与自动化运维实践。</p>
+      <p>日常工作涉及 Kubernetes 集群管理、ELK 日志体系建设、Ceph 分布式存储运维，以及各类监控告警和自动化工具的设计与实现。</p>
+      <p>这个博客用来记录踩过的坑、解决过的问题，以及一些工程思考。</p>
+      <h2>技术栈</h2>
+      <ul>
+        <li>容器编排：Kubernetes v1.30</li>
+        <li>日志：ELK Stack 7.17 / Filebeat / Logstash</li>
+        <li>存储：Ceph / Rook / RBD / CephFS</li>
+        <li>监控：Prometheus Operator / Grafana / Alertmanager</li>
+        <li>自动化：Bash / Python / Ansible</li>
+      </ul>
+      <h2>联系</h2>
+      <p><a href="https://github.com/SecOpsDataNinja" target="_blank">GitHub →</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2025 SecOpsDataNinja</span>
+    <span class="footer-sep">·</span>
+    <a href="https://github.com/SecOpsDataNinja/ladops" target="_blank">GitHub</a>
+  </footer>
+
+  <script src="js/posts.js"></script>
+</body>
+</html>
