@@ -13,13 +13,6 @@
  *   tags     — 标签数组
  */
 const POSTS = [
-  {
-    id: 'hello-world',
-    title: 'Hello World · 开始记录',
-    date: '2025-06-07',
-    excerpt: '这是第一篇笔记，用来测试博客是否正常工作。后续会陆续记录 Kubernetes、ELK、Ceph 相关的运维实践。',
-    tags: ['随笔']
-  },
   // ── 在这里添加新文章 ──
   // {
   //   id: 'k8s-node-troubleshoot',
