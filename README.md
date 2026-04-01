@@ -27,16 +27,3 @@ git push origin main
 
 GitHub Actions 自动部署，约 1 分钟后上线。
 
-## 本地预览
-
-任意 HTTP 服务器均可：
-
-```bash
-# Python
-python -m http.server 8080
-
-# Node
-npx serve .
-```
-
-然后打开 http://localhost:8080
