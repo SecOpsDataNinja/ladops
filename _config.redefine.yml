@@ -1,0 +1,76 @@
+# ==============================
+# Hexo Theme Redefine 配置
+# ==============================
+
+info:
+  name: LadOps
+  description: 运维笔记
+  avatar: /ladops/img/avatar.png  # 后面可以放自己头像
+  author: SecOpsDataNinja
+
+home_banner:
+  enable: true
+  # 顶部大图背景，可以换成自己喜欢的图片 URL
+  image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=80
+  # 打字机效果的副标题
+  title: LadOps
+  subtitle:
+    enable: true
+    list:
+      - Kubernetes 运维实践
+      - ELK 日志分析
+      - Ceph 存储管理
+      - 自动化与稳定性
+    loop: true
+    typedjs_cfg:
+      typeSpeed: 80
+      backSpeed: 40
+      startDelay: 300
+
+style:
+  primary_color: "#2d8cf0"
+  avatar:
+    shape: circle
+  code_blocks:
+    enable: true
+    style: mac  # mac 风格代码块，运维博客代码多，好看实用
+    highlight: atom-one-dark
+    copy_btn: true
+
+navbar:
+  auto_hide: false
+  links:
+    首页: /ladops/
+    归档: /ladops/archives/
+    分类: /ladops/categories/
+    关于: /ladops/about/
+
+footer:
+  enable: true
+  left: LadOps 运维笔记
+  right:
+    enable: true
+    theme_info: false  # 不显示主题信息，保持干净
+    beian: ""
+
+post:
+  toc:
+    enable: true
+    number: true
+    expand: true
+  meta:
+    created_date: true
+    updated_date: false
+    categories: true
+    tags: true
+
+# 关掉用不到的功能，保持简洁
+plugins:
+  pjax: false
+  katex: false
+  mathjax: false
+  mermaid: true   # 运维画流程图用得到
+
+# 评论关掉（air-gap 环境，不需要）
+comment:
+  enable: false
