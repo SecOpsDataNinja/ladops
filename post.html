@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LadOps · 运维笔记</title>
+  <title id="page-title">文章 · LadOps</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!-- marked.js for Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- highlight.js for code blocks -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/atom-one-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
 </head>
 <body>
 
@@ -16,24 +21,25 @@
     <div class="header-inner">
       <a href="index.html" class="site-title">LadOps</a>
       <nav>
-        <a href="index.html" class="active">首页</a>
+        <a href="index.html">首页</a>
         <a href="archives.html">归档</a>
         <a href="about.html">关于</a>
       </nav>
     </div>
   </header>
 
-  <main class="main-content">
-    <div class="hero">
-      <h1 class="hero-title">运维笔记</h1>
-      <p class="hero-sub">Kubernetes · ELK · Ceph · 自动化实践</p>
-    </div>
+  <main class="main-content post-main">
+    <article class="post-article">
+      <header class="post-header">
+        <div class="post-meta-top" id="post-date"></div>
+        <h1 class="post-heading" id="post-title">加载中…</h1>
+        <div class="post-tags" id="post-tags"></div>
+      </header>
+      <div class="divider"></div>
+      <div class="prose" id="post-content">加载中…</div>
+    </article>
 
-    <div class="divider"></div>
-
-    <section class="post-list" id="post-list">
-      <!-- 文章由 JS 动态渲染 -->
-    </section>
+    <nav class="post-nav" id="post-nav"></nav>
   </main>
 
   <footer class="site-footer">
@@ -45,7 +51,7 @@
   <script src="js/posts.js"></script>
   <script src="js/main.js"></script>
   <script>
-    renderPostList('post-list', POSTS, 10);
+    loadPost();
   </script>
 </body>
 </html>
